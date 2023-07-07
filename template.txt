@@ -82,3 +82,17 @@ import.meta.glob('../img/**');
 # Creare layout, partials ecc..
 ###########################################################################################
 
+###########################################################################################
+#Altri Comandi utili per richiamare modello, migration e seeder
+###########################################################################################
+
+# Aggiungendo "-m", oltre al modello viene creata anche la migration per "Modellos"
+# php artisan make:model Modello -m
+
+# php artisan make:seeder ModelloTableSeeder
+
+# Aggiungendo "-r" nel controller vengono già aggiunti le definizioni dei metodi
+# php artisan make:controller ModelloController -r
+
+# In Routes/web.php aggiungete:
+# Route::resource("products", ProductController::class);
